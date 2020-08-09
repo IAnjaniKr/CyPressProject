@@ -1,0 +1,7 @@
+{
+  "name": "Bob",
+  "gender": "Female",
+  "productName":["Blackberry","iphone","Nokia","Samsung"],
+  "success":"Thank you! Your order will be delivered in next few weeks"
+  
+}
