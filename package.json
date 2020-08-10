@@ -1,0 +1,23 @@
+{
+  "name": "CyProject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules\\.bin\\cypress run",
+    "headTest": "npm run test -- --headed",
+    "chromeTest":"npm run test -- --browser chrome",
+    "recordDashboardTest":"npm run test -- --record --key e92ec3bc-16f9-47c3-a96e-9d7f07009489 --reporter mochawesome" 
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "cypress": "^4.12.1",
+    "cypress-iframe": "^1.0.1",
+    "mocha": "^8.1.1",
+    "mochawesome": "^6.1.1"
+  }
+}

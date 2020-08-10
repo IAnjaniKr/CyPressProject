@@ -1,6 +1,6 @@
 describe('Automation Practice Suite', function(){
     it('This is test case for CheckBoxes',function(){
-        cy.visit('https://rahulshettyacademy.com/AutomationPractice/')
+        cy.visit(Cypress.env('url')+"AutomationPractice/")
         cy.get('#checkBoxOption1').should('not.be.checked').check().should('be.checked').and('have.value','option1')
         cy.get('#checkBoxOption1').uncheck().should('not.be.checked')
         cy.get('input[type="checkbox"]').check(['option2','option3'])

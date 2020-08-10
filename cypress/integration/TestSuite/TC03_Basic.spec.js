@@ -1,6 +1,6 @@
 describe('Automation Practice Test suite 03',function(){
     it('Test case to handle alert',function(){
-        cy.visit('https://rahulshettyacademy.com/AutomationPractice/')
+        cy.visit(Cypress.env('url')+"AutomationPractice/")
         cy.get('#alertbtn').should('be.visible').click()
         cy.get('input[value="Confirm"]').should('be.visible').click()
         cy.on('window:alert',(str)=>{

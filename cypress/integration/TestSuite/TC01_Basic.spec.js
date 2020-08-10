@@ -1,6 +1,6 @@
 describe('My Fist Test',function(){
     it('Test case TC01', function(){
-        cy.visit('https://rahulshettyacademy.com/seleniumPractise/#/')
+        cy.visit(Cypress.env('url')+"seleniumPractise/#/")
         cy.get('.search-keyword').should('be.visible').type('ca')
         cy.get('.product').should('have.length',5)
         cy.get('.products').as('ProductLocator')
